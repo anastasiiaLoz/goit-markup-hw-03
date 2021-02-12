@@ -52,7 +52,7 @@ body {
   margin-right: auto;
 }
 
-/*_____ Header____ */
+/*____________ Header_____________ */
 
 header {
   border-bottom: 1px solid: #2F303A;
@@ -70,7 +70,7 @@ header {
   align-items: center;
 }
 
-/* ____LOGO____ */
+/* ______________LOGO_________________ */
 
 .header-logo,
 .footer-logo {
@@ -103,7 +103,7 @@ header {
   color: var(--secondary-text-color);
 }
 
-/* _____Website Navigation____ */
+/* ____________Website Navigation___________ */
 
 .site-nav a {
   color: var(--secondary-text-color);
@@ -119,6 +119,11 @@ header {
   color: var(--accent-color);
 }
 
+.auth-nav .mail-link:hover,
+.auth-nav .phone-link:hover {
+  color: var(--accent-color);
+}
+
 .site-nav {
   display: flex;
 }
@@ -127,7 +132,7 @@ header {
 }
 
 
-/* ___Header Email & Phone#____ */
+/* ______________Header Email & Phone#_____________ */
 
 .auth-nav a {
   color: var(--primary-text-color);
@@ -164,7 +169,8 @@ header {
 }
 
 
-/* ______Banner Section_____*/
+/* ______________Banner Section_____________*/
+
 .banner {
   padding-top: 200px;
   padding-bottom: 280px;
@@ -202,6 +208,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: 0 auto;
@@ -220,7 +227,7 @@ header {
 }
 
 
-/*____Specialties Section___ */
+/*______________Specialties Section___________ */
 
 .specials-section {
   padding-top: 94px;
@@ -229,7 +236,7 @@ header {
 
 .specials-section,
 .work-section {
-  background-color: var(--primary-background-color);
+  background-color: var(--white-color);
 }
 .specials-section-title {
   font-weight: 700;
@@ -241,12 +248,11 @@ header {
   margin-bottom: 10px;
 }
 
-.specials-text {
+.specials-text>li {
   width: 270px;
-  height: 75px;
-  left: 815px;
-  top: 800px;
+  height: 101px;
   color: var(--primary-text-color);
+  
 }
 
 .specials-box {
@@ -268,7 +274,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-/* ___What do we do section___ */
+/* ______________What do we do section___________ */
 
 .work-section-title,
 .team-section-title {
@@ -287,7 +293,7 @@ header {
   padding-bottom: 94px;
 }
 
-/* ___Our Team Section____ */
+/* ______________Our Team Section______________ */
 
 .team-section {
   padding-top: 94px;
@@ -298,15 +304,14 @@ header {
 .team-photo {
   display:flex;
   justify-content: space-between;
-  /* flex-grow: 1; */
+  
 }
 
 .team-card {
   flex-basis: 270px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  flex-grow: 1; 
+  border-radius: 0px 0px 4px 4px; 
 } 
 
 .team-description h3{
@@ -329,14 +334,21 @@ header {
   background-color: var(--white-color);
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
-  
+  max-width: 100%;
+  /* display: inline-block; */
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.team-card>img {
+  display: inline-block;
+  align-content: center;
 }
 
 
-/* ____Footer section____*/
+/* _____________Footer section____________*/
 
 footer {
   background-color: var(--banner-footer-background-color);
@@ -360,7 +372,13 @@ footer {
   margin-top: 9px;
 }
 
-/* _____Projects Section_____ */
+/* ______!!!!________Портфолио_____!!!!_____Projects Section________ */
+
+.project-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  border: 1px solid #ECECEC;
+}
 
 .projects-btn {
   font-weight: 500;
@@ -373,12 +391,11 @@ footer {
 
 .projects-btn:focus,
 .projects-btn:hover {
-  color: var(--accent-color);
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
-.projects-btn.current {
-  color: var(--accent-color);
-}
+
 
 .projects-section-name {
   font-weight: 700;
@@ -399,6 +416,42 @@ footer {
 .projects-section-description {
   background-color: var(--white-color);
 }
+
+.projects-section-navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects-btn {
+  padding-right: 8px;
+  border:none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  width: 128px;
+  height: 38px;
+  background: #F5F4FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F4FA;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
+
+/* ______________Icons____________ */
+
+.ptojects-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 
