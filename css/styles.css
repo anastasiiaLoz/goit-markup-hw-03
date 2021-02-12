@@ -252,7 +252,6 @@ header {
 .specials-box {
   display: flex;
   align-items: center;
-  
 }
 
 .specials-box li:not(:last-child) {
