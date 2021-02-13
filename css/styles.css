@@ -249,10 +249,8 @@ header {
 }
 
 .specials-text>li {
-  width: 270px;
   height: 101px;
   color: var(--primary-text-color);
-  
 }
 
 .specials-box {
@@ -261,7 +259,7 @@ header {
 }
 
 .specials-box li:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .specials-section-text,
@@ -375,8 +373,8 @@ footer {
 /* ______!!!!________Портфолио_____!!!!_____Projects Section________ */
 
 .project-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 176px;
+  padding-bottom: 50px;
   border: 1px solid #ECECEC;
 }
 
@@ -420,8 +418,8 @@ footer {
 .projects-section-navigation {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 176px;
+  padding-bottom: 50px;
 }
 
 .projects-btn {
@@ -452,10 +450,32 @@ footer {
   flex-wrap: wrap;
 }
 
+.projects-cards {
+  display:block;
+}
+
+.projects-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -17px;
+  margin-bottom: -12px;
+  flex-basis: calc(100%/3 - 17px);
+}
+
+.projects-works {
+  align-content: stretch;
+  margin-right: 17px;
+  margin-bottom: 12px;
+  border: 1px solid #EEEEEE;
+  
+}
 
 
-
-
+.projects-title {
+  padding: 20px;
+  background-color: var(--white-color);
+}
 
 
 
