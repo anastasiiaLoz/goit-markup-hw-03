@@ -248,14 +248,16 @@ header {
   margin-bottom: 10px;
 }
 
-.specials-text>li {
+.specials-text {
   height: 101px;
+  width: 270px;
   color: var(--primary-text-color);
 }
 
 .specials-box {
   display: flex;
   align-items: center;
+  
 }
 
 .specials-box li:not(:last-child) {
