@@ -55,7 +55,7 @@ body {
 /*____________ Header_____________ */
 
 header {
-  border-bottom: 1px solid: #2F303A;
+  border-bottom: 1px solid#2F303A;
   background-color: var(--white-color);
 }
 
@@ -452,14 +452,13 @@ footer {
 .projects-blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-right: -30px;
+  margin-bottom: 30px;
   margin-bottom: 94px;
-  flex-basis: calc(100%/3 - 30px);
+  flex-basis: calc(100%/9 - 30px);
 }
 
 .projects-works {
-  justify-content:space-between;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #EEEEEE;
