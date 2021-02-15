@@ -55,7 +55,7 @@ body {
 /*____________ Header_____________ */
 
 header {
-  border-bottom: 1px solid#2F303A;
+  border-bottom: 1px solid #ECECEC;
   background-color: var(--white-color);
 }
 
@@ -457,8 +457,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   flex-basis: calc(100%/9 - 30px);
 }
 
